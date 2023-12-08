@@ -1,42 +1,44 @@
-## Project inspect
-in this project we are supposed to work with the indexing structre and the insertion of the values of the index into a hashing structre 
-using differnt methods: open addressing, chanining, extendable hashing and multiplehahsing
+# Project Inspection
 
-## Prerequest to run 
-- just having gcc,g++ or clang to run the proejct 
-- having make installed in your machine 
+In this project, our objective is to work with indexing structures and insert values into a hashing structure using various methods: open addressing, chaining, extendable hashing, and multiple hashing.
 
-## Clone the proejct
-- you can clone the project locally to run it 
-```bash 
+## Prerequisites to Run
+- Ensure you have GCC, G++, or Clang installed on your machine.
+- Make sure you have the `make` utility installed.
+
+## Clone the Project
+You can clone the project locally to run it:
+```bash
 git clone https://github.com/Amr-Shams/CMPN407-Labs.git
+cd code/
 ```
-in the directory named code you will find 2 Labs 
+In the directory named `code`, you will find two labs.
 
-## Run the prog
-- Lab01 
-inside this lab we will have a `MakeFile` with two runs 
---- 
-### Run Open Addressing
+## Run the Program
+
+### Lab01
+Inside this lab, we have a `MakeFile` with two runs:
+
+#### Run Open Addressing
 ```bash
 make run2
 ```
-### Run MultiHashing 
+
+#### Run MultiHashing
 ```bash
 make run2 1
 ```
-### Run Chanining function
+
+#### Run Chaining Function
 ```bash
 make run1
 ```
-### Notes
-- pls use `make clean` after any run
 
------------------
-### Lab02(Extendable Hahsing)
-------
-- running the file is much easier 
-```bash 
-make runn
+#### Notes
+- Please use `make clean` after any run.
+
+### Lab02 (Extendable Hashing)
+Running the file is much easier:
+```bash
+make run
 ```
-
