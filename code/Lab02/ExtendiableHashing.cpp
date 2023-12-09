@@ -223,7 +223,6 @@ int insertItem(DataItem data, Bucket& currentBucket, GlobalDirectory& globaldire
 	{
 		count++;
 		extendDirectory(globaldirectory, hash);
-    std::cout<<"Hashing Value: "<<hash<<std::endl;
 		int hash = getCurrentHash(data.key, globaldirectory.globalDepth);
 		value = insertItemIntoBucket(*globaldirectory.entry[hash], data);
 
