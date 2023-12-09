@@ -223,6 +223,7 @@ int insertItem(DataItem data, Bucket& currentBucket, GlobalDirectory& globaldire
 	{
 		count++;
 		extendDirectory(globaldirectory, hash);
+    std::cout<<"Hashing Value: "<<hash<<std::endl;
 		int hash = getCurrentHash(data.key, globaldirectory.globalDepth);
 		value = insertItemIntoBucket(*globaldirectory.entry[hash], data);
 
@@ -271,12 +272,14 @@ int deleteItem(int key, Bucket& currentBucket, GlobalDirectory& globaldirectory)
 	Bucket* ourBucket = globaldirectory.entry[hash];
 	int deletedItem= deleteItemFromBucket(*ourBucket, key);
 	if (deletedItem) {
-		if (ourBucket->currentEntries == 0) {
+		if (ourBucket->currentEntries == 0) { 
 			if(hash%2){
+				// merge with the next bucket
 				globaldirectory.entry[hash] = globaldirectory.entry[hash + 1];
 				globaldirectory.entry[hash + 1]->localDepth -= 1;
 			}
 			else{
+				// remove the previous bucket
 				globaldirectory.entry[hash] = globaldirectory.entry[hash -1];
 				globaldirectory.entry[hash -1]->localDepth -= 1;
 				

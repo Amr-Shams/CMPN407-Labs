@@ -37,7 +37,9 @@ int main() {
     ////////////////////////////////////////////////////////////
 
     insertItem(DataItem(1, 20), initialFile, globalDirectory);
+    displayDirectory(globalDirectory, initialFile, 0);
     insertItem(DataItem(2, 70), initialFile, globalDirectory);
+    displayDirectory(globalDirectory, initialFile, 0);
     insertItem(DataItem(42, 11), initialFile, globalDirectory);
     displayDirectory(globalDirectory, initialFile, 0);
     //============================================================
