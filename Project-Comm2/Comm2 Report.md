@@ -54,7 +54,7 @@ QPSK extends BPSK by encoding two bits per symbol, using four distinct phase shi
 
 The following code is what we used for each type.
 BPSK
-[[BSK-code]]
+![BSK-code] (BSK-code.md)
 ![BSK Modulation](Pasted%20image%2020231217012200.png)
 ![BSK Modulation](Pasted%20image%2020231217012216.png)
 
