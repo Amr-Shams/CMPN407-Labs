@@ -57,24 +57,17 @@ int main(int args, char *argv[])
 
   
   //3. Add some data in the table
-   insert(1, 20);
-   insert(2, 70);
-   insert(42, 80);
-   insert(4, 25);
-   insert(12, 44);
-   insert(14, 32);
-   insert(17, 11);
-   insert(13, 78);
-   insert(37, 97);
-   insert(11, 34);
-   insert(22, 730);
-   insert(46, 840);
-   insert(9, 83);
-   insert(21, 424);
-   insert(41, 115);
-   insert(71, 47);
-   insert(31, 92);
-   insert(73, 45);
+   insert(0, 0);
+insert(10,2);
+insert(20,4);
+insert(30,6);
+insert(40,8);
+
+DisplayFile(filehandle);
+deleteItem(20);
+deleteItem(30);
+DisplayFile(filehandle);
+search(40);
 
    //4. Display the database file again
    DisplayFile(filehandle);

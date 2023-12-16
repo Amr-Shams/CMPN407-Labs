@@ -78,7 +78,15 @@ int MultipleHashing(int fd, DataItem &item) {
 	int offset;
 	for(int i=0;i<RECORDSPERBUCKET;i++)
 	{
-		int hashIndex = (firstHashfunction(item.key)+i*secondHashfunction(item.key))%MBUCKETS;
+    int hashIndex(0);
+		if (i)
+    {
+      hashIndex = secondHashfunction(item.key);
+    }
+    else
+    {
+      hashIndex = firstHashfunction(item.key);
+    }
 		offset = hashIndex*sizeof(Bucket);
 		DataItem temp;
 		auto result = pread(fd, &temp, sizeof(DataItem),offset);

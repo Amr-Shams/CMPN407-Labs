@@ -64,7 +64,6 @@ int ChainingHashing(int fd, DataItem &item) {
   }
   while(curr != nullptr){
 	if(curr->dataItem.valid == 0 or curr->dataItem.valid == -1){
-	  // found empty space
 	  curr->dataItem.data = item.data;
 	  return counter;
 	}
