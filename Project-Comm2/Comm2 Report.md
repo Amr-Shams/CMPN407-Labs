@@ -54,9 +54,9 @@ QPSK extends BPSK by encoding two bits per symbol, using four distinct phase shi
 
 The following code is what we used for each type.
 BPSK
-[[BSK-code]] 
-![[Pasted image 20231217012200.png]]
-![[Pasted image 20231217012216.png]]
+[[BSK-code]]
+![BSK Modulation](Pasted%20image%2020231217012200.png)
+![BSK Modulation](Pasted%20image%2020231217012216.png)
 
 ### 1. BPSK (Binary Phase Shift Keying) Modulation
 
@@ -89,12 +89,12 @@ BPSK
 - Compares the received bits with the original bits for error calculation.
 --------------------
 
-QPSK
-[[QPSK-code]]
+## QPSK
+[QPSK-code]
 
-![[Pasted image 20231217012434.png]]
-![[Pasted image 20231217012452.png]]
-![[Pasted image 20231217012504.png]]
+![QPSK Modulation](Pasted%20image%2020231217012434.png)
+![QPSK Modulation](Pasted%20image%2020231217012452.png)
+![QPSK Modulation](Pasted%20image%2020231217012504.png)
 
 ### 2. QPSK (Quadrature Phase Shift Keying) Modulation
 
@@ -102,7 +102,7 @@ QPSK
 
 - Similar to BPSK, this function is the entry point for the QPSK modulation simulation.
 
-#### 2.2. `QPSK Modulation and Demodulation`
+#### 2.2. QPSK Modulation and Demodulation
 
 - QPSK modulation involves encoding two bits per symbol using four distinct phase shifts.
 - QPSK demodulation involves coherent detection using in-phase and quadrature components.
@@ -112,15 +112,14 @@ QPSK
 - Simulates QPSK modulation with AWGN.
 - Plots the BER curve for different SNR levels.
 
-------------
+---
 
-EPSK or 8PSK
+## EPSK or 8PSK
+[EPSK-code]
 
-[[EPSK-code]]
-
-![[Pasted image 20231217012809.png]]
-![[Pasted image 20231217012826.png]]
-![[Pasted image 20231217012847.png]]
+![8PSK Modulation](Pasted%20image%2020231217012809.png)
+![8PSK Modulation](Pasted%20image%2020231217012826.png)
+![8PSK Modulation](Pasted%20image%2020231217012847.png)
 
 ### 3. 8PSK (8-Phase Shift Keying) Modulation
 
@@ -149,13 +148,15 @@ EPSK or 8PSK
 #### 3.6. `saveAllFigures` Function
 
 - Saves all generated figures.
-----------
-EQAM
-[[EQAM-code]]
 
-![[Pasted image 20231217013622.png]]
-![[Pasted image 20231217013642.png]]
-![[Pasted image 20231217013657.png]]
+---
+
+## EQAM
+[EQAM-code]
+
+![QAM Modulation](Pasted%20image%2020231217013622.png)
+![QAM Modulation](Pasted%20image%2020231217013642.png)
+![QAM Modulation](Pasted%20image%2020231217013657.png)
 
 ### 4. QAM (Quadrature Amplitude Modulation) Modulation
 
